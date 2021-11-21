@@ -47,6 +47,9 @@ print(5 * 2)
 print(4 / 2)
 
 #Power
+calc = 5**2 #To the power of 2, instead of 5^2
+print(calc)
+
 calc = 5 + 2 * 2
 print(calc)
 
@@ -68,4 +71,4 @@ a
 multiline
 comment
 '''
-#import this #We are using python in this matter, easter egg
+#import this #We are using python in this matter, easter egg 
