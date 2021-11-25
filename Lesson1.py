@@ -23,13 +23,13 @@ print(full_name.title())
 #Whitespace
 print("Hello World") #There's a space between the two words
 print("Hello\tWorld") #\t=tab, t isn't shown
-#Backslash n = new line 
+#\n = new line 
 
 #Stripping Whitespaces - removing whitespaces
 name = "  Diana  "
 print(name.lstrip() + last_name)
 print(name.rstrip() + last_name)
-print(name.strip() + last_name)
+print(name.strip() + last_name) #Removes only left and right
 
 #Execises:
 #3
