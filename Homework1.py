@@ -20,3 +20,22 @@ print("Tomorrow's date is November", date)
 #I'm calculating using floating-point numbers:
 calc = 3.0 * 0.5
 print("3 x 0.5 =", calc) 
+
+
+what_now = "Now, I'm goNNA do MoRE stUFF beCAUse Github IS CurrentLY NOt workING FOr me."
+print(what_now.title())
+
+good = "it'S GOoD to PraCTise LIke this mULTIple times" #Talking to myself to practise functions
+why = "   Why?, you MAy ask"
+answer = "WeLL, beCAuse\tYou LeaRN them BETTEr" #Trying out the \t
+question = "is that tRUE?  "
+answer2 = "    If it wASN't I WOuldn't be RememberING these FunCtions that I'm usiNg"
+next = "yOU THink to yourself:" #Writing this one to use the + too
+you = "Yeah, THat MAkes sense"
+
+print(good.upper()) #Printing out the whole conversation with myself
+print(why.lstrip().lower())
+print(answer.upper())
+print(question.rstrip().lower())
+print(answer2.lstrip().upper())
+print(next.title() + " " + you.lower()) #Realizing there is a missing sace so I added " " like Bedir taught us
