@@ -3,7 +3,7 @@
 
 
 #1st section = sign (1 number: 0 = positive, 1 = negative), 2nd = exponent (11), 3rd = fraction (52)
-
+#Exponents show the scale of the number #Fractions give the digits that build up the number
 
 #In this case, the problem 0.1 + 0.2 is not equal to 0.3 
 #Looking at the bits that make up the numbers 0.1 and 0.2
