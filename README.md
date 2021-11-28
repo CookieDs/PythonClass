@@ -1,6 +1,5 @@
 # PythonClass
-This repository was created because I joined a class that will teach me the basics of the programming language python.
-
+This repository was created because I joined a class that will teach me the basics of the programming language python. <br/>
 Here you will see my progress under these 9 weeks.
 
 You will get access to all my files and notes.
