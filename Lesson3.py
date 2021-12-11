@@ -80,7 +80,7 @@ print(message[all_index:all_index +len("all")])
 
 msg = "Cats and dogs... Cats and dogs..." #If more than one is the same
 print(msg.find("Cats")) #Only looks for the first
-print(msg.rfind("Cats")) #-------------
+print(msg.rfind("Cats")) #Finds the first from right to left
 print(msg.count("dogs"))
 
 #Replace
@@ -117,9 +117,8 @@ print("some tries: %s %d %f" % ("hey there", 3, 3.0))
 #%d - int
 #%f - float
 
-#Variable types
-#Bool
-#True and False
+#Variable types:
+#Bool is the variable for True and False
 
 #Basic math operators
 a = 5 // 2 #Div without remaimder, 2 instead of 2.5 (whole number)
@@ -153,23 +152,33 @@ ad_run("Nilgun") #Has to be below definition
 ad_run("Yunus")
 ad_run("Diana")
 ad_run("Tarik")
-'''
+
 emails = ["em1@gmail.com", "e2@gmail.com", "f3@gmail.com", "gg5@gmail.com"]
 message = "students must bring a pen!"
 for email in emails:
     print(f"Sent to: {email}") #Sending email to different students
-    print(f"Message: {message}") #But if you want different messages
+    print(f"Message: {message}") #If you want a different message youd have to copy and paste with a different message. 
 
-new_emails = emails[:2] #The two first
-message = "students must bring a pen!"
-for email in emails:
-    print(f"Sent to: {email}") 
-    print(f"Message: {message}")
-'''
+#Here's an easier way, using a function:
+def email_students(message, emails): #Have the message and emails as arguments so you can change them, use different messages and emails
+    for email in emails:
+        print(f"Sent to: {email}")
+        print(f"Message: {message}")
+
+emails = ["em1@gmail.com", "e2@gmail.com", "f3@gmail.com", "gg5@gmail.com"]
+message = "Students must bring a pen!"
+email_students(message, emails)
+
+message = "Also an eraser please..."
+email_students(message, emails)
+
+message = "No pen, meant pencil!"
+email_students(message, emails[:2]) #The first two
+
 #Functions can turn into a value
 def get_number_of_words(sentence):
     ls = sentence.split(" ")
-    return len(ls) #Gives result of len(ls)
+    return len(ls) #Gives result of len(ls) #Return - goes out of the function
 
 message = "The world is an amazing place!"
 length = get_number_of_words(message)
@@ -177,19 +186,19 @@ print(length)
 
 #Exercises:
 #3
-def idk(name):
+def greetings(name):
     print(f"Hello {name}!") #Forcing in the name, defining a function
     print(f"How are you {name}?")
     print(f"Good to see you {name}")
 
-idk("Diana")
-idk("Bedir")
-idk("Nilgun")
+greetings("Diana")
+greetings("Bedir")
+greetings("Nilgun")
 
-def still_dk(first, last):
+def name(first, last):
     print(f"Hey, {first} {last}.")
 
-still_dk("Diana", "S")
+name("Diana", "S")
 
 def nums(n1, n2):
     print(f"{n1} + {n2} = {n1 + n2}")
@@ -197,11 +206,10 @@ def nums(n1, n2):
 nums(1, 3) 
 nums(2, 5)
 nums(6, 6)
-'''
+
 name = input("What's your name?")
 print(f"Hi {name}")
 
 n1 = int(input("First number: "))
 n2 = int(input("Second number: "))
 print(f"The sum is = {n1 + n2}")
-'''
