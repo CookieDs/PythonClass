@@ -5,7 +5,7 @@ for n in numbers:
     print(n)
 
 #2
-print(numbers[0:1:1])
+print(numbers[0:1])
 print(numbers[0:2])
 print(numbers[0:3])
 print(numbers[0:4])
@@ -50,7 +50,7 @@ for i in reversed(numbers):
     print(i)
 
 #9
-for i in range(-10,0):
+for i in range(-10, 0):
     print(i)
 
 #10
@@ -60,3 +60,48 @@ for i, b in enumerate(bands):
 
 #11
 prime_numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+print(prime_numbers[0:7])
+
+#12
+n1 = 0
+n2 = 1
+for i in range(11):
+    print(n1)
+    n3 = n2 + n1
+    n1 = n2
+    n2 = n3
+'''
+#13
+n = int(input("Enter a number to find out its factorial number: "))
+sum = 1
+for i in range(1, n + 1):
+    sum = sum * i
+print("!" + str(n), "=", sum)
+
+#14
+n = int(input("Enter a large number:"))
+print(sorted(n, reverse=True))
+n.sort(reverse=True)
+print(n)
+'''
+#15
+
+#18
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end = " ")
+    print("")
+for i in range(1, 6):
+    for j in range(5, i, -1):
+        print("*", end = " ")
+    print("")
+
+#19 Idk how to do the spaces
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end = " ")
+    print("")
+for i in range(1, 6):
+    for j in range(5, i, -1):
+        print("*", end = " ")
+    print("")
