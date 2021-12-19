@@ -6,7 +6,7 @@ if n > 10:
 else:
     print("The number is less than or equal to 10.")
 
-#Q2  If-Else / For-Loop / Lists / Functions - NOPE
+#Q2  If-Else / For-Loop / Lists / Functions - I didn't do this!
 def is_poisonous(mushroom,poisonous_codes):
     for code in poisonous_codes:
         if code in mushroom:
